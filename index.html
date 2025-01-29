@@ -4,11 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI + Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome setup -->
+    <script src="https://kit.fontawesome.com/5e3033b577.js" crossorigin="anonymous"></script>
+    <style>
+        .primary-font{
+            font-family: "Manrope", serif;
+        }
+    </style>
 </head>
-<body>
+<body class="primary-font">
+<!-- Header Section -->
+<header class="max-w-screen-xl mx-auto mt-5 mb-0">
+    <!-- Navbar section -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          
+          <a class="btn btn-ghost"> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center "></i> <span class="text-3xl sm:text-2xl font-extrabold">Rinterio</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a  class="font-extrabold font-base text-[#494949]">Home</a></li>
+            <li><a class="text-[#737373]">Service</a></li>
+            <li><a class="text-[#737373]">Portfolio</a></li>
+            <li><a class="text-[#737373]">Blogs</a></li>
+            <li><a class="text-[#737373]">Contact Us</a></li> 
+          </ul>
+        </div>
+        <div class="navbar-end space-x-4">  
+            <i class=" fa-solid fa-magnifying-glass w-12 h-12 rounded-full bg-gray-50 text-black hidden md:flex items-center justify-center "></i>
+            <i class="  fa-solid fa-cart-shopping w-12 h-12 rounded-full bg-gray-50 text-black hidden md:flex items-center justify-center "></i>
+           <a class=" btn bg-[#ABEF5F] rounded-full"> <span class="font-bold text-xl"> Book Consult</span> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] w-8 h-8 rounded-full md:flex items-center justify-center text-white "></i></a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  rounded-full bg-gray-50 text-black flex items-center justify-center">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+              <li><a >Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- banner section -->
 
+      <div class="hero mt-10 sm:mt-3">
+        <div class="hero-content text-center"> 
+          <div class="w-full">
+            <div class=" mx-auto flex justify-center">
+                <img src="/assets/banner.png" alt="">
+            </div>
+            <h1 class="text-6xl font-extrabold mt-2 mb-2 sm:mb-0 sm:mt-0 sm:text-2xl">A barn house of this design has a <br> striking appearance</h1>
+            <p class="py-6 text-[#494949] sm:text-sm  mx-auto sm:py-3">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+            </p>
+            <div class="mt-2">
+                <a class="btn  rounded-full  bg-lime-200 "> <span class=" font-bold text-xl"> View Deatils</span> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center text-black "></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</header>
 
 </body>
 </html>
